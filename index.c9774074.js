@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector("table"),t=e.querySelectorAll("thead th"),r=e.querySelector("tbody");t.forEach(function(e,t){e.addEventListener("click",function(){var e=Array.from(r.querySelectorAll("tr")),n=2===t||3===t,o=function(e){return n?parseFloat(e.replace(/[^0-9.]/g,"")):e.toLowerCase()};e.sort(function(e,r){var n=e.children[t].textContent.trim(),c=r.children[t].textContent.trim();return o(n)>o(c)?1:-1}),e.forEach(function(e){return r.appendChild(e)})})})});
+//# sourceMappingURL=index.c9774074.js.map
